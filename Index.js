@@ -11,31 +11,31 @@ function addTask(){
         li.innerHTML=data.value;
         listcontainer.appendChild(li);
         let span = document.createElement("span");
-        span.innerHTML='\u00d7';
-        liElement.appendChild(span)
+        span.innerHTML="\u00d7";
+        li.appendChild(span)
     }
     data.value='';
-    saveData();
+    // saveData();
 }
 
 // create a event to check the task 
 listcontainer.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
-        saveData();
+        // saveData();
     }
     else if(e.target.tagName === "SPAN"){
           e.target.parentElement.remove();
-          saveData();
+        //   saveData();
     }
 }, false);
 
-// 
-function saveData(){
-     localStorage.setItem("data", listcontainer.innerHTML);
-}
+//  if you want the data is show than remove commment part
+// function saveData(){
+//      localStorage.setItem("data", listcontainer.innerHTML);
+// }
 
-function showData(){
-    listcontainer.innerHTML = localStorage.getItem("data");
-}
-showData();
+// function showData(){
+//     listcontainer.innerHTML = localStorage.getItem("data");
+// }
+// showData();
