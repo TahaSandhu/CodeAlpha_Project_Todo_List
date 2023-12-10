@@ -10,7 +10,8 @@
     width: 100%;
     min-height: 100vh;
     padding: 10px;
-    background: linear-gradient(135deg, #2596be, #063970);
+    background-image: url("./To-Do-Img/images/bg.jpg");
+    /* background: linear-gradient(135deg, #2596be, #063970); */
 }
 
 h2 {
@@ -27,7 +28,7 @@ select {
     border-radius: 27px;
     box-sizing: border-box;
     background: transparent;
-   
+
 }
 
 .todo-list {
@@ -38,7 +39,7 @@ select {
     margin: 100px auto 20px;
     padding: 40px 40px;
     border-radius: 20px;
-    
+
 }
   button{
     font-weight: bold;

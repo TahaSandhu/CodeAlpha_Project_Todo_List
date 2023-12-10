@@ -1,7 +1,7 @@
 const data = document.getElementById('input-box');
 const listcontainer = document.getElementById('list-container');
 
-// this function add task  
+
 function addTask(){
     if(data.value === ''){
         alert("Please enter a something!");
@@ -18,7 +18,7 @@ function addTask(){
     // saveData();
 }
 
-// create a event to check the task 
+
 listcontainer.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
@@ -30,7 +30,7 @@ listcontainer.addEventListener("click",function(e){
     }
 }, false);
 
-//  if you want the data is show than remove commment part
+//  if you want to store data  than remove commment part
 // function saveData(){
 //      localStorage.setItem("data", listcontainer.innerHTML);
 // }
